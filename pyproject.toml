@@ -1,0 +1,22 @@
+[project]
+name = "nepal-south-asia-timeseries"
+version = "1.0.0"
+description = "Reproducible data pipeline for \"Spatial Cognition, Public Trust, and Youth Migration\" (Nepal & South Asia)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
